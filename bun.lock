@@ -4,9 +4,11 @@
     "": {
       "name": "customer",
       "dependencies": {
+        "@ariefrahman39/shared-utils": "^0.3.0",
         "@prisma/client": "^6.10.1",
         "@types/express": "^5.0.3",
         "express": "^5.1.0",
+        "jose": "^6.0.11",
         "multer": "^2.0.1",
         "prisma": "^6.10.1",
         "zod": "^3.25.67",
@@ -20,6 +22,8 @@
     },
   },
   "packages": {
+    "@ariefrahman39/shared-utils": ["@ariefrahman39/shared-utils@0.3.0", "", { "dependencies": { "@types/express": "^5.0.1", "express": "^5.1.0", "zod": "^3.24.2" }, "peerDependencies": { "typescript": "^5" } }, "sha512-gJ44RNGU35yjZyVSD6FshT73NVyNHvixpgGwRGH0qIizpcyAUUdo6Etq/4lzfGRN6s/9vdBx9WOVt4lVHyIB8g=="],
+
     "@prisma/client": ["@prisma/client@6.10.1", "", { "peerDependencies": { "prisma": "*", "typescript": ">=5.1.0" }, "optionalPeers": ["prisma", "typescript"] }, "sha512-Re4pMlcUsQsUTAYMK7EJ4Bw2kg3WfZAAlr8GjORJaK4VOP6LxRQUQ1TuLnxcF42XqGkWQ36q5CQF1yVadANQ6w=="],
 
     "@prisma/config": ["@prisma/config@6.10.1", "", { "dependencies": { "jiti": "2.4.2" } }, "sha512-kz4/bnqrOrzWo8KzYguN0cden4CzLJJ+2VSpKtF8utHS3l1JS0Lhv6BLwpOX6X9yNreTbZQZwewb+/BMPDCIYQ=="],
@@ -137,6 +141,8 @@
     "is-promise": ["is-promise@4.0.0", "", {}, "sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ=="],
 
     "jiti": ["jiti@2.4.2", "", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A=="],
+
+    "jose": ["jose@6.0.11", "", {}, "sha512-QxG7EaliDARm1O1S8BGakqncGT9s25bKL1WSf6/oa17Tkqwi8D2ZNglqCF+DsYF88/rV66Q/Q2mFAy697E1DUg=="],
 
     "math-intrinsics": ["math-intrinsics@1.1.0", "", {}, "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g=="],
 

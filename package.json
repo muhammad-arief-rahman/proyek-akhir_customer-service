@@ -14,9 +14,11 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@ariefrahman39/shared-utils": "^0.3.0",
     "@prisma/client": "^6.10.1",
     "@types/express": "^5.0.3",
     "express": "^5.1.0",
+    "jose": "^6.0.11",
     "multer": "^2.0.1",
     "prisma": "^6.10.1",
     "zod": "^3.25.67"

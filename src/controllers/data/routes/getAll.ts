@@ -5,9 +5,6 @@ import prisma from "../../../lib/db"
 const getAll: RequestHandler = async (req, res) => {
   try {
     const customers = await prisma.customer.findMany({
-      omit: {
-        userId: true, // Exclude userId from the response
-      },
       orderBy: {
         name: "asc", // Order by name in ascending order
       }
