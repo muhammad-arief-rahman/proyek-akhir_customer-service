@@ -8,11 +8,7 @@ const router = Router()
 
 router.get("/", MiscController.checkStatus)
 
-router.get(
-  "/data",
-  AuthMiddleware.authenticate("admin"),
-  DataController.getAll
-)
+router.get("/data", AuthMiddleware.authenticate("admin"), DataController.getAll)
 router.post("/data/store", InternalServiceMiddleware, DataController.store)
 
 router.patch(

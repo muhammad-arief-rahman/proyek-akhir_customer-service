@@ -9,6 +9,7 @@ const getAll: RequestHandler = async (req, res) => {
     const customers = await prisma.customer.findMany({
       where: {
         userId: userId ? String(userId) : undefined, // Filter by userId if provided
+
       },
       orderBy: {
         name: "asc", // Order by name in ascending order
