@@ -4,7 +4,7 @@
     "": {
       "name": "customer",
       "dependencies": {
-        "@ariefrahman39/shared-utils": "^0.4.0",
+        "@ariefrahman39/shared-utils": "^0.6.1",
         "@prisma/client": "^6.10.1",
         "@types/cookie-parser": "^1.4.9",
         "@types/express": "^5.0.3",
@@ -24,7 +24,7 @@
     },
   },
   "packages": {
-    "@ariefrahman39/shared-utils": ["@ariefrahman39/shared-utils@0.4.0", "", { "dependencies": { "@types/express": "^5.0.1", "axios": "^1.10.0", "express": "^5.1.0", "jose": "^6.0.11", "zod": "^3.24.2" }, "peerDependencies": { "typescript": "^5" } }, "sha512-jVFqM/YEhBgvmoFDJKRifHhPn0ciGviZe86pcy7/qzwqck1gTLG5gyKXq5lB8uyh9QHviao5yYFfpykE+tREDg=="],
+    "@ariefrahman39/shared-utils": ["@ariefrahman39/shared-utils@0.6.1", "", { "dependencies": { "@types/express": "^5.0.1", "axios": "^1.10.0", "express": "^5.1.0", "jose": "^6.0.11", "zod": "^3.24.2" }, "peerDependencies": { "typescript": "^5" } }, "sha512-rd2SGjNOFCF8bh4jvIWQyTG8ogsEfNvAZeNpDdUbPiYrbsWL3jYVhboGV9MPiewHcmjqxC11A2JdeijLdmhAeQ=="],
 
     "@prisma/client": ["@prisma/client@6.10.1", "", { "peerDependencies": { "prisma": "*", "typescript": ">=5.1.0" }, "optionalPeers": ["prisma", "typescript"] }, "sha512-Re4pMlcUsQsUTAYMK7EJ4Bw2kg3WfZAAlr8GjORJaK4VOP6LxRQUQ1TuLnxcF42XqGkWQ36q5CQF1yVadANQ6w=="],
 

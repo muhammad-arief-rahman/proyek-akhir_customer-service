@@ -4,12 +4,25 @@ import prisma from "../../../lib/db"
 
 const getAll: RequestHandler = async (req, res) => {
   try {
-    const { userId } = req.query
+    const { userId, unlinked = "false" } = req.query
+
+    if (unlinked === "true") {
+      const customers = await prisma.customer.findMany({
+        where: {
+          OR: [
+            { userId: null }, // Unlinked customers
+            { userId: userId ? String(userId) : undefined }, // Customers linked to the user
+          ],
+        },
+      })
+
+      response(res, 200, "Unlinked customers retrieved successfully", customers)
+      return
+    }
 
     const customers = await prisma.customer.findMany({
       where: {
-        userId: userId ? String(userId) : undefined, // Filter by userId if provided
-
+        userId: userId ? String(userId) : undefined, // Only customers linked to the user
       },
       orderBy: {
         name: "asc", // Order by name in ascending order

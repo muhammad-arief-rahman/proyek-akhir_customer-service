@@ -57,9 +57,7 @@ import prisma from "../../../lib/db"
       })
     )
 
-    response(res, 200, "Data stored successfully", {
-      data: customerData,
-    })
+    response(res, 200, "Data stored successfully", customerData)
   } catch (error) {
     console.error("Error storing data:", error)
     internalServerError(res, error)
