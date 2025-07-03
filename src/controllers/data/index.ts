@@ -1,9 +1,10 @@
-import { getAll, store, patch } from "./routes"
+import { getAll, store, patch, getByUserId } from "./routes"
 
 const DataController = {
   store,
   getAll,
-  patch
+  patch,
+  getByUserId,
 }
 
 export default DataController

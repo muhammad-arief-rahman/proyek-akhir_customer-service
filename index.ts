@@ -14,7 +14,7 @@ app.use(cookieParser())
 app.use("/", router)
 
 app.use((req, res) => {
-  response(res, 404, "Not Found")
+  response(res, 404, `Path ${req.path} not Found in customer-service`)
 })
 
 app.listen(port, () => {

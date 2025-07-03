@@ -10,20 +10,16 @@ router.get("/", MiscController.checkStatus)
 
 router.get(
   "/data",
-  (req, res, next) => {
-    console.log("Cookies:", req.cookies)
-    console.log("Headers:", req.headers)
 
-    next()
-  },
   AuthMiddleware.authenticate("admin"),
   DataController.getAll
 )
 router.post("/data/store", InternalServiceMiddleware, DataController.store)
 
+router.get("/data-by-user/:userId", DataController.getByUserId)
+
 router.patch(
   "/data/:id",
-
   AuthMiddleware.authenticate("admin"),
   DataController.patch
 )
