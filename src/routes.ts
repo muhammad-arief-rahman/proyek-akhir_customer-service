@@ -8,12 +8,9 @@ const router = Router()
 
 router.get("/", MiscController.checkStatus)
 
-router.get(
-  "/data",
+router.get("/data", DataController.getAll)
+router.get("/data/details/:id", DataController.getById)
 
-  AuthMiddleware.authenticate("admin"),
-  DataController.getAll
-)
 router.post("/data/store", InternalServiceMiddleware, DataController.store)
 
 router.get("/data-by-user/:userId", DataController.getByUserId)
